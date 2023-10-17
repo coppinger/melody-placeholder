@@ -1,7 +1,7 @@
 <div
     class="w-screen h-screen bg-orange-100 flex flex-col items-center justify-center gap-32 overflow-x-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
 >
-    <div class="flex flex-col gap-12 items-center text-center">
+    <div class="flex flex-col gap-12 items-center text-center w-full">
         <svg
             width="196"
             height="48"
@@ -46,7 +46,6 @@
         >
             Set your<br />music free
         </p>
-
         <div class="w-full inline-flex flex-nowrap bg-orange-200">
             <ul
                 class="flex items-center justify-center p-4 gap-16 animate-infinite-scroll"
