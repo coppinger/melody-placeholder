@@ -1,3 +1,8 @@
+<script>
+    import { Button } from "$lib/components/ui/button";
+    import { Input } from "$lib/components/ui/input";
+</script>
+
 <div
     class="w-screen h-screen bg-orange-100 flex flex-col items-center justify-center gap-32 overflow-x-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
 >
@@ -46,6 +51,7 @@
         >
             Set your<br />music free
         </p>
+
         <div class="w-full inline-flex flex-nowrap bg-orange-200">
             <ul
                 class="flex items-center justify-center p-4 gap-16 animate-infinite-scroll"
@@ -1123,6 +1129,30 @@
                 </li>
             </ul>
         </div>
-        <p class="text-lg font-bold text-gray-400">Arriving late 2023</p>
+        <div class="flex flex-col gap-4 items-center">
+            <form
+                action="https://api.sheetmonkey.io/form/g4VFsVrMDtuQHq1TCy1HZ8"
+                method="post"
+                class="flex w-full max-w-sm items-center space-x-2"
+            >
+                <Input
+                    type="email"
+                    placeholder="your.best@email.com"
+                    name="Email"
+                    required
+                    class="bg-orange-100 border border-slate-400"
+                />
+
+                <input
+                    type="hidden"
+                    name="Created"
+                    value="x-sheetmonkey-current-date-time"
+                />
+                <Button type="submit">Let me know</Button>
+            </form>
+            <p class="text-slate-600">
+                Drop your email here 👆 and we'll let you know when we launch
+            </p>
+        </div>
     </div>
 </div>
