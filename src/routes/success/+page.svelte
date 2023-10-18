@@ -1,7 +1,7 @@
 <div
-    class="w-screen h-screen bg-orange-100 flex flex-col items-center justify-center gap-32 overflow-x-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]"
+    class="w-screen h-screen bg-orange-100 flex flex-col items-center justify-center gap-32 overflow-x-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-50px),transparent_100%)]"
 >
-    <div class="flex flex-col gap-12 items-center text-center w-full">
+    <div class="flex flex-col gap-12 items-center text-center w-full px-12">
         <svg
             width="196"
             height="48"
@@ -35,9 +35,7 @@
                 fill="#7C2D12"
             />
         </svg>
-        <p
-            class="hidden md:flex text-3xl font-black text-slate-800 break-words"
-        >
+        <p class="flex text-3xl font-black text-slate-800 break-words">
             We're excited that you're excited :)
         </p>
         <p>✅ Email received, we'll let you know when thngs are kicking off</p>
