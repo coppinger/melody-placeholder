@@ -1,5 +1,31 @@
+<script>
+    import { Confetti } from "svelte-confetti";
+</script>
+
 <div
-    class="w-screen h-screen bg-orange-100 flex flex-col items-center justify-center gap-32 overflow-x-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-50px),transparent_100%)]"
+    style="
+ position: fixed;
+ top: -50px;
+ left: 0;
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ overflow: hidden;
+ pointer-events: none;"
+>
+    <Confetti
+        x={[-5, 5]}
+        y={[0, 0.1]}
+        delay={[500, 2000]}
+        infinite
+        duration="5000"
+        amount="200"
+        fallDistance="100vh"
+    />
+</div>
+<div
+    class="w-screen h-screen bg-orange-100 flex flex-col items-center justify-center gap-32 overflow-x-hidden"
 >
     <div class="flex flex-col gap-12 items-center text-center w-full px-12">
         <svg
@@ -38,6 +64,9 @@
         <p class="flex text-3xl font-black text-slate-800 break-words">
             We're excited that you're excited :)
         </p>
-        <p>✅ Email received, we'll let you know when thngs are kicking off</p>
+        <p>
+            ✅ Submission complete, we'll let you know when things are kicking
+            off
+        </p>
     </div>
 </div>
